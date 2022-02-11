@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<!-- logo -->
+<div>
+    <h1 id="cont">𝕲𝖆𝖒𝖊𝕸𝖆𝖘𝖙𝖊𝖗</h1>
+    <h3 id = slogan>Where you're looking for</h3>
+</div>
+<!-- Sign in -->
+<div class="form-container sign-in-form">
+    <div class="form-box sign-in-box">
+        <h2>Log In</h2>
+        <form id="infoLogin" action="">
+            <!-- email -->
+            <div class="field">
+                <i class="uil uil-at"></i>
+                <input type="email" placeholder="Email ID" name="email" id="userName">
+            </div>
+            <!-- pass -->
+            <div class="field">
+                <i class="uil uil-lock-alt"></i>
+                <input class="password-input" type="password" placeholder= "Password" name="password" id="userPw">
+                <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+            </div>
+            <!-- forgot -->
+            <div class="forgot-link">
+                <a href="#">Forgot password?</a>
+            </div>
+            <!-- submit -->
+            <input type="submit" class="submit-btn" value="Login" onclick="check()">
+        </form>
+        <div class="login-options">
+            <p class="text">Or, log in with...</p>
+
+            <div class="other-logins">
+                <a href=""><img src="./img-demo/google.png" alt=""></a>
+                <a href=""><img src="./img-demo/facebook.png" alt=""></a>
+                <a href=""><img src="./img-demo/apple.png" alt=""></a>
+            </div>
+        </div>
+    </div> 
+    <div class="imgBox sign-in-imgBox">
+        <div class="sliding-link">
+            <p>Don't have an account?</p>
+            <span class="sign-up-btn">Sign up</span>
+        </div>
+        <img src="./img-demo/sl1.png" alt="">
+    </div>
+</div>
+
+<!-- Sign Up -->
+<div class="form-container sign-up-form">
+    <div class="imgBox sign-up-imgBox">
+        <div class="sliding-link">
+            <p>Already a member?</p>
+            <span class="sign-in-btn">Log in</span>
+        </div>
+        <img class="signup" src="./img-demo/sl2.png" alt="">
+    </div>
+    <div class="form-box sign-up-box">
+        <h2>Sign up</h2>
+        <div class="login-options">
+            <div class="other-logins">
+                <a href=""><img src="./img-demo/google.png" alt=""></a>
+                <a href=""><img src="./img-demo/facebook.png" alt=""></a>
+                <a href=""><img src="./img-demo/apple.png" alt=""></a>
+            </div>
+            <p class="text">Or, sign up with email</p>
+        </div>
+        <form id="info" action="">
+            <!-- email -->
+            <div class="field">
+                <i class="uil uil-at"></i>
+                <input type="email" placeholder="Email ID" name="email" id="email">
+            </div>
+            <!-- User -->
+            <div class="field">
+                <i class="uil uil-user"></i>
+                <input type="text" placeholder="Full name" name="name" id="name">
+            </div>
+            <!-- pass -->
+            <div class="field">
+                <i class="uil uil-lock-alt"></i>
+                <input type="password" placeholder= "Password" name="password" id="password">
+            </div>
+            <!-- pass-confirm -->
+            <div class="field">
+                <i class="uil uil-lock-access"></i>
+                <input type="password" placeholder= "Confirm password" name="confirm" id="confirm">
+            </div>
+            <!-- submit -->
+            <input type="submit" class="submit-btn" value="Sign up" onclick="store()">
+        </form>
+    </div> 
+    
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

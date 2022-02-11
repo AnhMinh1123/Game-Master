@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    outline: none;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  .container {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .max-width {
+    width: 100%;
+  }
+  
+  nav {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+  }
+  
+  .shoes-image {
+    height: 500px;
+  }
+  
+  .sliceshow {
+    width: 100%;
+    height: 400px;
+    margin-top: 32px;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px;
+    }
+  }
+  
+  .webgame {
+    width:100%;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .box {
+    height: 400px;
+    /* chieu cao luôn lớn hơn 300px */
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    padding-left: 50px;
+  }
+  
+  .box div {
+    margin-top: 100px;
+    text-align: center;
+    border: 1px solid red;
+  }
+  
+  .box div:nth-child(1) {
+    height: 400px;
+    width: 400px;
+    line-height: 400px;
+  }
+  
+  .box div:nth-child(2) {
+    height: 400px;
+    width: 400px;
+    line-height: 400px;
+  }
+  
+  .box div:nth-child(3) {
+    height: 400px;
+    width: 400px;
+    line-height: 400px;
+  }
+  
+  li {
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+  }
+  
+  
+  
+  .box2 div:nth-child(1){
+   
+    width:  100%;
+    
+    
+  }
+  .box2{
+    height: 400px;
+    /* chieu cao luôn lớn hơn 300px */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  
+  }

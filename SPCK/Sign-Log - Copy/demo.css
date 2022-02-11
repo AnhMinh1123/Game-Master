@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* ep kieu margin padding */
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex ;
+    justify-content: center;
+}
+
+#cont{
+    display: flex;
+    color: #00ff00;
+    margin-top: 5%;
+}
+
+#slogan{
+    display: flex;
+    color: #00ff00;
+    margin-top: 0.5%;
+}
+
+.form-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 6%;
+}
+
+.form-box{
+    z-index:999 ;
+    box-shadow: 5px 5px 5px #00ff00;
+    width: 350px;
+    padding: 50px 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sign-in-box{
+    background: linear-gradient(to left bottom, #121116 , #353542 , #000016 , #3633d3dc);
+    border: 1px solid #004718;
+}
+
+.sign-up-box{
+    background: linear-gradient(to right bottom, #121116 , #353542 , #000016 , #3633d3dc);
+    border: 1px solid #004718;
+}
+
+.form-box h2{
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #00ff00;
+}
+
+.form-box .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00ff00;
+    margin-bottom: 25px;
+    height: 45px;
+    border-radius: 6px
+}
+
+.form-box .field.active{ 
+    border: 2px solid #8bff8b;
+    transition: 0.3s ease;
+}
+
+.form-box .field input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 1em;
+    padding-bottom: 5px;
+    color: #8bff8b;
+}
+
+.form-box .field i{
+    color: #828da0;
+    font-size:1.3em;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.form-box .field.active i{ 
+    color : #8bff8b;
+    transition: 0,3s ease;
+} 
+
+::placeholder{
+    color: #828da0;
+    font-size: 0.85em;
+}
+
+.eye-btn{
+    cursor: pointer;
+}
+
+.eye-btn i:hover{
+    color: #00ff00;
+    transition: 0.3s ease;
+}
+
+.forgot-link{
+    transform: translateY(-10px);
+    text-align: right;
+    color: #00ff00; 
+}
+
+.forgot-link a{
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 500;
+    color: #00ff00;
+}
+
+.submit-btn{
+    background: #00ff00;
+    color:#fff;
+    border: none;
+    outline: none;
+    width: 120px ; 
+    padding: 10px 30px ;
+    border-radius: 5px ;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.login-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-options .text{
+    color: #828da0;
+    font-size: 0.65em;
+    margin: 25px 0;
+}
+
+.other-logins{
+    display: flex;
+}
+
+.other-logins a{
+    border: 1px solid #00ff00;
+    padding: 11px 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.other-logins a:hover{ 
+    border : 1px solid #8bff8b;
+    background: white;
+}
+
+.other-logins a img{
+    width: 20px;
+}
+
+.imgBox img{
+    height: 340px;
+    width: 260px;
+}
+
+.sliding-link{
+    display: flex;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.sliding-link span{
+    color: #00ff00;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.imgBox{
+    z-index: 888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(37 , 37 , 37);
+    box-shadow: 0 5px 25px  rgb( 0 0 0/15%);
+    height: 400px;
+    padding: 15px 35px;
+}
+
+.sign-in-imgBox{
+    border-radius: 0 5px 5px 0;
+    background-image: linear-gradient(to right bottom, #121116 , #353542 , #000016 , #3633d360);
+}
+
+.sign-up-imgBox{
+    border-radius: 5px 0 0 5px;
+    background-image: linear-gradient(to left bottom, #121116 , #353542 , #000016 , #3633d360);
+}
+
+.sign-in-form.hide .sign-in-box{
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.sign-in-form.hide .sign-in-imgBox{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
+.sign-in-form.show .sign-in-box,
+.sign-in-form.show .sign-in-imgBox{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 1s ease;
+}
+
+.sign-up-form .sign-up-imgBox{
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.sign-up-form .sign-up-box{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
+.sign-up-form.show .sign-up-imgBox,
+.sign-up-form.show .sign-up-box{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 1s ease;
+}
+
+.sliding-link p{
+    color : rgb(255, 255, 255)
+}
+/* @media screen and (max-with: 735px){
+    .form-container{
+        flex-direction: column;
+        top: 0;
+        overflow: hidden;
+        padding: 30px;
+    }
+
+    .form-box {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .imgBox img{
+        max-width: 45%;
+        min-width: 180px;
+    }
+
+    .imgBox img{
+        box-shadow: none;
+        width: 100;
+        height: auto;
+        padding: 35px 35px 15px;
+    }
+
+    .sign-up-form{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .form-container{
+        font-size: 0.9rem;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .other-logins a{
+        padding: 9px 25px;
+        margin: 0 3px;
+    }
+} */
+

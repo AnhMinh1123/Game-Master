@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gamephu4.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="max-width">
+                <ul class="menu">
+                    <!-- ul: danh sach khong thu tu -->
+                    <a>
+                        <li>SPORT</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sliceshow">
+            <div class="shoes-image">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <div class="anhsize"> <img src="https://shoptrongnghia.com/wp-content/uploads/2020/09/PES-2021-02.jpg" style="width:100%"></div>
+
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <div class="anhsize"> <img src="https://tongkhomayphotocopy.com/wp-content/uploads/2020/09/m%C3%A1y-t%C3%ADnh-ch%C6%A1i-Game-FIFA4-t%E1%BA%A1i-H%E1%BA%A3i-Ph%C3%B2ng.jpg" style="width:100%"></div>
+
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <div class="anhsize"> <img src="https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/9DAF/production/_111976304_mario_golfl.jpg" style="width:100%"></div>
+
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="webgame">
+        <div class="box1">
+            <div class="box">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9Q8-miAIJKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+            <div class="box">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sGwJhv5W5qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+        <div class="box2">
+           <div>
+               
+            <a href="https://en.wikipedia.org/wiki/Sports_video_game">Link for more information</a>
+            <br>
+            What Does Sport Games Mean?<br>
+            A sports video game is a video game that simulates the practice of sports. <br> 
+     
+             <img width="100%"src="https://pm1.narvii.com/6193/3629a6e64f8964a190a2241ae1d6b43a11ead66e_hq.jpg" alt="">
+        </div>
+          
+      
+        </div>
+    </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>

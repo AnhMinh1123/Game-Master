@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gamephu.css">
+   
+</head>
+
+<body>
+    
+   
+          <!-- menu+dropdown -->
+  <nav class="dropdown">
+
+    <div class="logo">
+      <p class="game">𝕲𝖆𝖒𝖊</p>
+      <p class="master">𝕸𝖆𝖘𝖙𝖊𝖗</p>
+    </div>
+
+    <div class="li">
+      <ul>
+        <li><a>RPG</a></li>
+        <li><a href="./home.html">Home</a></li>
+
+        <li>
+          <a href="#" class="dropbtn">Special modes</a>
+          <ul class="dropdown-content">
+              
+            <li><a href="#">Developer</a></li>
+            <li><a href="#">Marketer</a></li>
+            <li><a href="#">Player's status</a></li>
+       
+          </ul>
+        </li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+    </div>
+  </nav>
+
+        <div class="sliceshow">
+            <div class="shoes-image">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <div class="anhsize"> <img src="https://steamcdn-a.akamaihd.net/steam/apps/109600/capsule_616x353.jpg?t=1597095741" style="width:100%"></div>
+
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <div class="anhsize"> <img src="https://image.thanhnien.vn/768/uploaded/duongntt/2020_09_10/capsule_616x353_efvj.jpg" style="width:100%"></div>
+
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <div class="anhsize"> <img src="https://cdn.akamai.steamstatic.com/steam/apps/632470/capsule_616x353.jpg?t=1622639696" style="width:100%"></div>
+
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="webgame">
+        <div class="box1">
+            <div class="box">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5xVTNj4b08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+            <div class="box">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YBRTg74ZhLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+        <div class="box2">
+           <div>
+               
+            <a href="https://www.techopedia.com/definition/27052/role-playing-game-rpg">Link for more information</a>
+            <br>
+            What Does Role-Playing Game (RPG) Mean?<br>
+            A role-playing game (RPG) is a genre of video game <br> 
+            where the gamer controls a fictional character (or characters) <br>
+             that undertakes a quest in an imaginary world.
+             <img src="https://toppng.com/uploads/preview/39kib-538x234-logo-rpg-role-playing-games-logo-115632079366ueccxbtln.png" alt="">
+             <div class="comment"><input type="text" placeholder="enter your cmt "></div>
+        </div>
+          
+           
+        </div>
+    </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
